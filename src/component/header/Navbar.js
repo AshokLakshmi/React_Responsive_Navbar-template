@@ -8,7 +8,7 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
   const NavJson = NavItems.map(({ title, url }, index) => {
     return (
-      <NavLink to={url} key={index}>
+      <NavLink to={url} key={index} onClick={() => setToggle(false)}>
         {title}
       </NavLink>
     );
